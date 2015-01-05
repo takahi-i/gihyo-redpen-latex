@@ -1,0 +1,8 @@
+*~
+*.bbl
+Makefile
+*.aux
+*.blg
+*.log
+*.pdf
+*.dvi

@@ -1,0 +1,29 @@
+\documentclass[a4paper, 10pt]{jarticle}
+
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{url}
+\usepackage{ascmac,here,txfonts,txfonts}
+\usepackage{color}
+\usepackage{listings, jlisting}
+\usepackage[justification=centering]{caption}
+
+\title{自動文書検査ツール RedPen}
+\author{伊藤 敬彦}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+規約にしたがった文書記述をサポートするツールとして RedPen~\cite{redpen} を作成した。RedPen は自然言語で
+記述された入力文書の検査を一部自動化する目的で作成された。RedPen は設定を変更することで所属組織の規約
+に合わせてた検査をおこなえる。また RedPen に足りない機能があればユーザが追加できる。
+
+本稿では RedPen の開発の背景、提供する機能、および今後の開発について解説する。
+\end{abstract}
+
+\input{content}
+
+\bibliographystyle{plain}
+\bibliography{reference,reference-j}
+
+\end{document}
