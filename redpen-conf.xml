@@ -1,0 +1,31 @@
+<redpen-conf lang="ja">
+    <validators>
+        <validator name="SentenceLength">
+            <property name="max_len" value="100"/>
+        </validator>
+        <validator name="InvalidSymbol" />
+        <validator name="CommaNumber" />
+        <validator name="InvalidExpression">
+	    <property name="list" value="文章,プログラマ，検査ツール、チェック,幾つか,合わせて,対して,ポイント"/>
+	</validator>
+        <validator name="KatakanaEndHyphen"/>
+        <validator name="KatakanaSpellCheck"/>
+        <validator name="SectionLength">
+            <property name="max_num" value="1500"/>
+        </validator>
+        <validator name="ParagraphNumber">
+	  <property name="max_num" value="10"/>
+	</validator>
+        <validator name="DoubledWord">
+	  <property name="list" value="redpen,文書,機能,検査,管理,文,長,規約"/>
+	</validator>
+        <validator name="SymbolWithSpace" />
+        <validator name="SuccessiveWord" />
+	<validator name="SpaceBetweenAlphabeticalWord" />
+    </validators>
+    <symbols lang="ja">
+        <symbol name="FULL_STOP" value="．" invalid-chars="。." />
+        <symbol name="COMMA" value="，" invalid-chars="、," after-space="false" />
+        <symbol name="SPACE" value=" " invalid-chars="　" />
+    </symbols>
+</redpen-conf>
